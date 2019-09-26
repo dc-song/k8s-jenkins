@@ -2,8 +2,10 @@
 
 
 按照个人环境修改pvc配置，ingress域名。
+
 顺序启动
 ```
+kubectl create namespace kube-ops
 kubectl create -f jenkins-pvc.yaml
 kubectl create -f jenkins-rbac.yaml
 kubectl create -f jenkins-deployment.yaml
